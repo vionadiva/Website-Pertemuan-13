@@ -3,13 +3,13 @@
 
     <div class="bg-white p-6 rounded-xl shadow-md">
         <h2 class="text-2xl font-bold text-pink-600 mb-4">
-            Tentang Saya
+            Profile Saya
         </h2>
 
-        <p>
-            Saya merupakan mahasiswa TRPL yang sedang belajar Laravel,
-            Tailwind CSS, dan pengembangan web.
-        </p>
+        <ul class="space-y-2">
+            <li><b>Nama:</b> Viona Diva Shifana</li>
+            <li><b>Kelas:</b> 1 TRPL C</li>
+        </ul>
     </div>
 
 </x-layout>

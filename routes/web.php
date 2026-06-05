@@ -1,16 +1,29 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Post;
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', [
+        'title' => 'Home Page'
+    ]);
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about', [
+        'title' => 'About Page'
+    ]);
 });
 
-Route::get('/gallery', function () {
-    return view('gallery');
+Route::get('/profile', function () {
+    return view('profile', [
+        'title' => 'Profile Page'
+    ]);
 });
 
+Route::get('/blog', function () {
+    return view('blog', [
+        'title' => 'Blog',
+        'posts' => Post::all()
+    ]);
+});
